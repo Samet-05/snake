@@ -123,12 +123,6 @@ void field(){
          else
          range[i][j]=" ";
 
-          
-      
-        
-       
-
-
         printf("%s",range[i][j]);
         }    
       
@@ -162,27 +156,10 @@ void field(){
             snakesx[a]=snakesx[a-1];
             snakesy[a]=snakesy[a-1];
         }
-   
-
-         
-
-
-
 
 }
 
-
-
-
-
-
 void main(){
-     
- 
-
-
-    
-
     do{
             for(a=1; a<=length; a++){
                      if(snakex==snakesx[a] && snakey==snakesy[a]){
@@ -191,22 +168,15 @@ void main(){
             printf("GAME OVER");
             getch();
          }
-            }
- 
-         
+            
          field();
          direction();
-
-      
 
          if(snakex==baitx && snakey==baity){
          random_number();
          length++;
          }
  
-
-
-
 
          if(snakex<1)
          snakex=23;
@@ -216,18 +186,8 @@ void main(){
          snakey=48;
          if(snakey>50)
          snakey=1;
-
-
-
-
-
-
          system("clear");
 
-
-       
-      
-    
     }while(off==0);
     
   
